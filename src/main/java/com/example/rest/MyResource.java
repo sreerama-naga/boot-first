@@ -12,8 +12,8 @@ public class MyResource {
 	
 	//http://localhost:8080/greet
 	
-	@RequestMapping(method=RequestMethod.GET,value="/greet", produces=
-			{MediaType.APPLICATION_JSON_VALUE,MediaType.APPLICATION_XML_VALUE})
+	@RequestMapping(method=RequestMethod.GET,value="/greet"/*, produces=
+			{MediaType.APPLICATION_JSON_VALUE,MediaType.APPLICATION_XML_VALUE}*/)
 	public String greet(){
 		return "Hello"+ new Date();
 	}
